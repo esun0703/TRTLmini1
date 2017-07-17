@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>TRTL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css" media="screen" title="no title" />
+    <link rel="stylesheet" href="style/styleMaterialize.css" media="screen" title="no title" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- <header> -->
+    <div class="navbar-fixed">
+        <!-- Top Nav Bar -->
+        <nav class="white z-depth-0 ">
+            <div class="nav-wrapper">
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="sass.html"><i class="tiny material-icons">perm_identity</i></a></li>
+                    <li><a href="badges.html"><i class="tiny material-icons">forum</i></a></li>
+                    <li><a href="collapsible.html"><i class="tiny material-icons">notifications_none</i></a></li>
+                </ul>
+                <a href="#" class="brand-logo center"><img id="logo" src="style/trilogylogo.jpg"></a>
+                <ul id="rightNav" class="right hide-on-med-and-down">
+                    <li>
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label class="label-icon" for="search">Type Here To Search</label>
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="sass.html"><i class="material-icons left">search</i></a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul class="tabs">
+                    <li class="tab"><a href="#test1">DASHBOARD</a></li>
+                    <li class="tab"><a class="active" href="#test2">SISENSE</a></li>
+                    <li class="tab"><a href="#test4">FORMS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- END TOP NAV BAR -->
+    <!-- </header> -->
+    <div class="container">
+        <div class="row">
+            <div class="col s3" id="sideBar">
+                <ul id="slide-out" class="side-nav fixed">
+                    <li>
+                        <div class="background">
+                            <div class="user-view">
+                                <ul>
+                                    <li><img class="circle" src="style/default-profile-picture.jpg"></li>
+                                    <li><span class="white-text name">John Doe</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="sideLinks"><a href="#!"><i class="small material-icons">dashboard
+                    </i>DASHBOARD</a></li>
+                    <!-- assessment -->
+                    <li class="sideLinks"><a href="#!"><i class="small material-icons">assessment</i>SISENSE</a></li>
+                    <li class="sideLinks"><a href="#!"><i class="material-icons">assignment</i>FORMS</a></li>
+                </ul>
+            </div>
+            <div class="col s9" id="mainContent">
+                <!-- <div> -->
+                    <div class="row">
+                        <ul class="collapsible" id="scisenseSearch" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">Filter Search<i class="material-icons">mode_edit</i></div>
+                                <div class="collapsible-body">
+                                    <form class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <input id="first_name" type="text" class="validate">
+                                                <label for="first_name">First Name</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input id="last_name" type="text" class="validate">
+                                                <label for="last_name">Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <select class="N/A Transparent">
+                                                    <option value="" disabled selected>Choose your option</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                                <label>Materialize Select</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <select>
+                                                    <option value="" disabled selected>Choose your option</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                                <label>Materialize Select</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <a class="waves-effect waves-light btn">button</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="table">
+                            <table id="candidateTable" class="bordered highlight responsive-table centered">
+                                <tr id="candidateTableHeader">
+                                    <th>Firstname</th>
+                                    <th>Lastname</th>
+                                    <th>Age</th>
+                                </tr>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Eve</td>
+                                    <td>Jackson</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Eve</td>
+                                    <td>Jackson</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Eve</td>
+                                    <td>Jackson</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Eve</td>
+                                    <td>Jackson</td>
+                                    <td>94</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    // $(document).ready(function() {
+    $('.button-collapse').sideNav('show');
+    $('select').material_select();
+    $('.collapsible').collapsible();
+
+    // });
+
+    // Hide sideNav
+    </script>
+</body>
+
+</html>
